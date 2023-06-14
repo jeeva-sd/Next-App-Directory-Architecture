@@ -1,3 +1,26 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "no-unused-vars": "error",
+    "eqeqeq": "error",
+    "indent": [
+      "error",
+      4
+    ],
+    "semi": [
+      "warning",
+      "always"
+    ],
+    "quotes": [
+      "warning",
+      "single"
+    ],
+    "no-multiple-empty-lines": [
+      "warning",
+      {
+        "max": 2
+      }
+    ],
+    "no-trailing-spaces": "error"
+  }
 }
