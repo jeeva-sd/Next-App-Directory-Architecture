@@ -10,11 +10,16 @@ const Index = () => {
 
     return (
         <div className='w-full text-center'>
-            {loading ? <div>loading...</div> : <button className='border border-black p-2 rounded' onClick={() => dispatch(fetchPost())}>Fetch posts</button>}
+            {loading ?
+                <div>loading...</div>
+                :
+                <button
+                    className='border border-black p-2 rounded'
+                    onClick={() => dispatch(fetchPost())}>
+                    Fetch posts
+                </button>}
 
-            <button className='border border-black p-2 rounded' onClick={() => dispatch(fetchPost())}>Fetch posts</button>
-            <button className='border border-black p-2 rounded' onClick={() => dispatch(fetchPost())}>Fetch posts</button>
-            {/* {post?.map((post: any, index: number) => <div key={index}>{post.title}</div>)} */}
+            {post?.map((post: any, index: number) => <div key={index}>{post.title}</div>)}
         </div>
     )
 }
