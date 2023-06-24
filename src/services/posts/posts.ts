@@ -1,4 +1,4 @@
-import { http } from '~/services';
+import { http } from '~/extensions';
 import { postParams } from './types';
 
 export class PostService {

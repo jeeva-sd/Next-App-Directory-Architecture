@@ -14,7 +14,7 @@ const Index = () => {
                 <div>loading...</div>
                 :
                 <button
-                    className='border border-black p-2 rounded'
+                    className='border border-black p-2 rounded bg-white text-black hover:bg-slate-50'
                     onClick={() => dispatch(fetchPost())}>
                     Fetch posts
                 </button>}

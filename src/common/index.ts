@@ -1,0 +1,1 @@
+export type  { APIResult } from './types';
